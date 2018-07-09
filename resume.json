@@ -1,0 +1,125 @@
+{
+  "basics": {
+    "name": "陈靓悦 ",
+    "label": "用户体验设计师/产品交互",
+    "picture": "",
+    "email": "346507434@qq.com",
+    "phone": "13701614330",
+    "website": "",
+    "summary": "一个用客观理性的方式看待和思考世界，积极入世又追求理性的人。",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "",
+      "countryCode": "",
+      "region": "上海"
+    },
+    "profiles": []
+  },
+  "work": [
+    {
+      "company": "财录科技有限公司",
+      "position": "产品经理",
+      "website": "https://www.caifujilu.com/cailu",
+      "startDate": "2015-11-01",
+      "endDate": "2018-07-01",
+      "summary": "负责产品定位、交互设计；协同开发完成所有产品相关任务。",
+      "highlights": [
+        "代表公司路演荣获 2017年Fintech度中国金融科技创新创业大赛入围奖"
+      ]
+    },
+    {
+      "company": "上海大智慧股份有限公司",
+      "position": "设计师",
+      "website": "http://pay.gw.com.cn",
+      "startDate": "2011-07-01",
+      "endDate": "2015-11-01",
+      "summary": "公司对外公共关系媒介宣传",
+      "highlights": [
+        "对公司常规项目进行包装和优化，包括平台介绍、合作案例、合作方案等。",
+        "负责相关页面的设计，包括PC端网页、微信、banner图片广告等；线上宣传内部提案和沟通。",
+        "业务相关的其他项目（如：理财博览会、产品发布会）"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "上海博物馆",
+      "position": "义务导览讲解",
+      "website": "http://www.shanghaimuseum.net/museum/frontend/",
+      "startDate": "2017-01-01",
+      "endDate": "2018-07-09",
+      "summary": "陶瓷馆",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "华东理工大学",
+      "area": "艺术设计与传媒--产品设计",
+      "studyType": "本科-工科学士 Bachelor",
+      "startDate": "2006-09-01",
+      "endDate": "2010-07-01",
+      "gpa": "",
+      "courses": [
+        "数字时代营销 Marketing in a Dingital World",
+        "转型经济和新兴市场 Economics of Transition and Emerging Markets",
+        "艺术与文化策略 Arts and Culture Strategy",
+        "广告与社会 Advertising and Society"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "“中国创翼”青年创业大赛",
+      "date": "2015-11-01",
+      "awarder": "医行者 -中医线上交流平台 （现 大家中医APP）",
+      "summary": "三等奖"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "交互工具",
+      "level": "",
+      "keywords": [
+        "Axure",
+        "Sketch（蓝湖）"
+      ]
+    },
+    {
+      "name": "效果展现",
+      "level": "",
+      "keywords": [
+        "Ps",
+        "Ai",
+        "Ae"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "中文",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "CET6   丨  可流畅阅读《The Economist》难度的外刊"
+    }
+  ],
+  "interests": [
+    {
+      "name": "中国哲学",
+      "keywords": [
+        "人性",
+        "逻辑"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Henry Ford",
+      "reference": "When everything seems to be going against you,remember that the airplane takes off against the wind, not with it."
+    }
+  ]
+}
