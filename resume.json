@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "陈靓悦 ",
-    "label": "用户体验设计师/产品交互",
+    "label": "UI设计师",
     "picture": "",
     "email": "346507434@qq.com",
     "phone": "13701614330",
     "website": "",
-    "summary": "一个用客观理性的方式看待和思考世界，积极入世又追求理性的人。",
+    "summary": "一个用客观理性的方式看待和思考世界，又积极入世的人。",
     "location": {
       "address": "",
       "postalCode": "",
@@ -17,9 +17,23 @@
     "profiles": []
   },
   "work": [
+
+     {
+      "company": "京创智汇(上海)物流科技有限公司（华师大金融大数据实验室）",
+      "position": "高级UI设计师",
+      "website": "http://pay.gw.com.cn",
+      "startDate": "2019-08-04",
+      "endDate": "",
+      "summary": "公司唯一的设计",
+      "highlights": [
+        "根据APP、WEB产品原型的功能需要，重新整合展示内容排列方式，设定色值、字号大小等级等。",
+        "制作宣传、招聘等涉及的线下纸质物料。如易拉宝、二折页、手提袋等。",
+        "官网、公众号小程序页面等。"
+      ]
+    },
     {
       "company": "财录科技有限公司",
-      "position": "产品经理",
+      "position": "产品经理/UI设计",
       "website": "https://www.caifujilu.com/cailu",
       "startDate": "2015-11-01",
       "endDate": "2018-07-01",
@@ -47,8 +61,6 @@
       "organization": "上海博物馆",
       "position": "义务导览讲解",
       "website": "http://www.shanghaimuseum.net/museum/frontend/",
-      "startDate": "2017-01-01",
-      "endDate": "2018-07-09",
       "summary": "陶瓷馆",
       "highlights": []
     }
@@ -80,20 +92,14 @@
   "publications": [],
   "skills": [
     {
-      "name": "交互工具",
+      "name": "设计工具",
       "level": "",
       "keywords": [
-        "Axure",
-        "Sketch（蓝湖）"
-      ]
-    },
-    {
-      "name": "效果展现",
-      "level": "",
-      "keywords": [
-        "Ps",
-        "Ai",
-        "Ae"
+        "Photoshop",
+        "Illustrator",
+        "Sketch",
+        "蓝湖",
+        "Figma"
       ]
     }
   ],
@@ -104,15 +110,13 @@
     },
     {
       "language": "English",
-      "fluency": "CET6   丨  可流畅阅读《The Economist》难度的外刊"
+      "fluency": "CET6 "
     }
   ],
   "interests": [
     {
       "name": "中国哲学",
       "keywords": [
-        "人性",
-        "逻辑"
       ]
     }
   ],
