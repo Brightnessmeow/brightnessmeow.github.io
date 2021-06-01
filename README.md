@@ -8,5 +8,5 @@ resume serve
 
 # theme
 ```
-npm install jsonresume-theme-paper
+npm install jsonresume-theme-spartan
 ```

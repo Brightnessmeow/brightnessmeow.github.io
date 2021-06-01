@@ -1,650 +1,789 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-  <title>陈靓悦 </title>
-  <link href='//fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
-  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-  <style>body, html {
-  padding-top:2.5em;
-  margin:0;
-  background-color:#fafafa;
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<title>陈靓悦 </title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic' rel='stylesheet' type='text/css'>
+	<style>
+		/********************************************
+* 	reset from
+* 	http://meyerweb.com/eric/tools/css/reset/
+*******************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
-
-.note {
-  display:block;
-  position: absolute;
-  top:10px;
-  left:10px;
-
-  font-family: "Open Sans";
-  font-size: 0.6em;
-}
-
-.new {
-  background-color: #81C784;
-
-  border: 1px solid #757575;
-  padding: 1px;
-  border-radius: 4px;
-
-}
-
-/* Header */
-
-header {
-  width:100%;
-  vertical-align: middle;
-  text-align: center;
- 
+/* Custom reset */
+.main-summary p,
+#publications .item,
+#skills .item,
+#languages .item,
+#references .item,
+#interests .item{
+	margin: 0;
 }
 
-.header-content {
-  display: inline-block;
-}
 
-.pic {
-  margin: 0 auto;
-  margin-top:-2.5em;
-  
-  border-radius:10em;
-  height:4em;
-  width:4em;
-  
-  border: 2px solid #e0e0e0;
-  transition : all 0.5s linear;
-  
+/****************
+*		SMARTPHONES
+****************/
+em {
+	color: #757575;
 }
-
-@-webkit-keyframes wiggle {
-  0%   {
-    transform: rotate(0deg);
-  }
-  25%  {
-    transform: rotate(-30deg);
-  }
-  50%  {
-    transform: rotate(15deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+p {
+	margin: 1em 0;
 }
-
-.pic:hover {
-  /*Webkit fix*/
-  -webkit-transform: translateZ(0);
-  
-  cursor:pointer;
-  
-  -webkit-animation: wiggle 0.7s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+blockquote {
+	margin: 0;
+	margin-bottom: 1em;
 }
-
-.header-text {
-  margin-top:0.5em;
-  margin-left:1em;
+strong {
+	font-weight: 700;
+	font-size: 1.1em;
 }
-
-header p {
-  text-align:center;
-  font-family: "Merriweather";
-  
-  margin:0;
-  
-  color: #212121;
+ul {
+	margin-top: 1em;
 }
-
-.first-name {
-   font-size: 1.05em;
+div.item {
+	margin: 1em 0 2em;
+	padding-bottom: 2em;
 }
-
-.subtitle {
-  font-family: "Merriweather";
-  padding-top:.3em;
-  font-size:0.55em;
-  font-weight:500;
-  color: #424242;
+div.item:last-of-type {
+	margin: 0;
+	border-bottom: none;
+	padding-bottom: 0;
 }
+p {
+	text-align: justify;
+}
 
-/* Information */
 
-.paper {
-  margin: 0 auto;
-  margin-bottom:1em;
-  
-  background-color:white;
-  width:60%;
-  
-  padding:0.5em 0 0.5em 0;
-  
-  border-top: 1px solid #e0e0e0;
-  border-left: 1px solid #e0e0e0;
-  border-right: 1px solid #e0e0e0;
-  border-bottom: 3px solid #e0e0e0;
-  border-radius:3px;
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
 }
-
-@media(max-width:992px) {
-  .paper {
-    width:80%;
-  }
+h1 {
+	font-size: 2.5rem;
 }
-
-/* Content Part */
-
-.content-wrapper {
-  padding-right:7.25%;
+h2,
+h3 {
+	font-size: 1rem;
 }
-
-.content {
-  display:table;
-  width:100%;
-  
-  padding-top:1.5em;
-  
-  /*border-top: 1px solid #eeeeee;*/
+a {
+	color: #EB5F51;
+	text-decoration: none;
 }
-
-.content:last-child {
-  margin-bottom: 2em;
+a:hover {
+	text-decoration: underline;
 }
 
-body > div > article > div > section:last-child {
-  padding-bottom:1.5em;
+/* Layout */
+body {
+	background: #f2f2f2;
+	line-height: 1.6;
+	font-size: 13px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.row {
-    display:table-row;
+#resume {
+	padding: 1rem 0;
+	margin: 1rem auto;
 }
-.row div {
-    display:table-cell;
-}
 
-.content-cat {
-  font-family: "Merriweather";
-  font-variant:small-caps;
-  font-weight:300;
-  letter-spacing: 1px;
-  
-  color: #212121;
-  
-  font-size:0.975em;
-  
-  text-align:center;
-  vertical-align:middle;
-
-  padding-left:6.66%;
-  width:30%;
+#header {
+	padding: 0 1em;
+	margin-bottom: 1em;
 }
 
-.content-cat p {
-  font-size:0.55em;
-  font-weight:600;
-  
-  margin-bottom:0;
+#resume > header div {
+	display: table;
+	padding-left: 0.5em;
 }
 
-.content-text {
-  border-left:1px solid #e0e0e0;
-  transition: border 0.66s ease-in;
+#resume > header div.middle {
+	padding-top: 1.5em;
 }
 
-.big-text {
-  vertical-align:top;
+header img {
+	display: block;
+	width: 10em;
+	border-radius: 0.275em;
+	float: right;
 }
 
-.content-text ul {
-  padding:0;
-  margin:0;
-  margin-top:0.15em;
-  
-  width:85%;
-  margin-left:1.5em;
+header .name {
+	line-height: 1;
 }
 
-.content-text ul:last-child {
-  margin-bottom:0.5em;
+header .label {
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: #757575;
 }
 
-.content-text ul li {
-  font-family: "Open Sans";
-  font-size:0.7em;
-  
-  display:inline-block;
-  
+section:not(.section) {
+	padding: .5em 1rem;
 }
 
-.content-text ul li:first-child {
-  width:35%;
-  
-  color: #424242;
-  
-  font-weight:600;
+section#references {
+	border-bottom:none;
 }
 
-.content-text ul li a, div.content-text.work-listing.education-listing > p > strong > a {
-  text-decoration: none;
-  color: #0277bd;
+section#basics {
+	background: inherit;
+	margin-bottom: 0;
 }
 
-.content-text ul li a:hover {
-  color:#4fc3f7;
+section#skills {
+	padding-bottom: 0;
 }
 
-.work-listing p {
-  font-family: "Open Sans";
-  font-size:0.7em;
-  
-  color: #424242;
-  
-  margin-left:2em;
-  margin-top:0.45em;
-  margin-bottom: 0.45em;
+section#education,
+section#work,
+.main-summary section {
+	padding-bottom: 1em;
 }
 
-div.content-text.work-listing.education-listing > p:nth-child(2) {
-  margin-top:0.25em;
+header::after {
+	display: table;
+	content: " ";
+	clear: both;
 }
 
-.work-listing .highlight {
-  font-family: "Open Sans";
-  font-size:0.7em;
-  font-weight:400;
-  
-  color: #424242;
-  
-  margin-left:3.25em;
-  
-  list-style-type: disc;
-  list-style-position: inside;
-  display: list-item;
-  
+h2.section-title {
+	text-align: left;
+	font-size: 1rem;
+	font-weight: 400;
+	color: #757575;
+	padding: 1em 1rem 0;
+	margin-bottom: 0.1275em;
 }
 
-.education-listing > .heading {
-  font-weight:600;
-  
-  margin-top:0.75em;
-  margin-left:2em;
+.date {
+	font-weight: 700;
+	color: #757575;
 }
 
-.education-listing > .highlight {
-  margin-left:3.25em;
+.position, .area, .institution {
+	font-weight: 700;
 }
 
-.highlight {
-  transition: border .33s ease-in;
+#interests .item, #languages .item {
+	padding: 0 1em 1em 0;
+	border-bottom: none;
 }
 
-.profiles-listing ul li, .profiles-listing ul li:first-child {
-  width:32%;
-  font-weight: normal;
+.website::before {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-decoration: none;
+	min-width: 1.25em;
+	margin-right: 0.25em;
+	text-align: center;
+	content: '\f14c';
 }
 
-.work-content, .education-content {
-  padding-top: .75em;
-  page-break-inside: avoid;
+#profiles, #skills, #interests, #languages {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+  padding-bottom: 1em;
 }
 
-section.content.education-content > div > div.content-cat {
-  vertical-align: top;
+#profiles, #location {
+	box-shadow: none;
+	padding: 0;
 }
-
-div.content-text.skills-listing > p {
-  font-family: "Open Sans";
-  font-size:0.7em;
-  font-weight:400;
 
-  margin-left: 2em;
-  margin-top: 0.45em;
-  margin-bottom: 0.45em;
+#profiles .item {
+	margin: 0;
+	padding: 0;
+	padding-right: 1em;
+	border-bottom: none;
 }
 
-div.content-text.skills-listing > p > {
-  color:#212121;
+#interests ul {
+	margin-top: 0.5em;
 }
 
-@media screen and (max-width: 600px) {
-  body, html {
-    padding-top: 30px;
-  }
+#publications .name {
+	font-style: italic;
+}
 
-  .paper {
-    width:95%;
-  }
+.courses li, .keywords li{
+	display: inline-block;
+	background: #f0f0f0;
+	font-size: 0.9em;
+	line-height: 1;
+	color: #333;
+	padding: 0.4em 0.8em;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-radius: 3px;
+}
 
-  .row div {
-    display: block;
-  }
+#publications .date {
+	font-weight: normal;
+	color: #000;
+}
 
-  .content-cat {
-    width: 100%;
-  }
+#skills .item {
+	min-width: 15em;
+	padding: 0 .5em .8em 0;
+	border-bottom: none;
+}
 
-  .content-text ul li {
-    width: 100%;
-  }
 
-  .content-text ul li:first-child {
-    width: 100%;
-  }
-  
-  .education-listing > .highlight {
-    margin-left: 30px;
-  }
-}
-</style>
-  <style media="print">
-body, html {
-  background-color: white;
-  padding-top: 1.5em;
-  font-size: 104%;
+/* Skills chart */
+#skills .level .bar {
+	border: 1px solid #ddd;
+	display: block;
+	width: 10em;
+	height: 5px;
+	margin: 0em 0 1em 0;
+	position: relative;
 }
 
-.paper {
-  width:100%;
-  border: 0;
+#skills .level .bar::after {
+	position: absolute;
+	content: " ";
+	top: 0;
+	left: 0;
+	background: black;
+	height: 5px;
+}
 
-  padding-top: 0;
+#skills .level.beginner .bar::after {
+	background: #EB5F51;
+	width: 2.5em;
 }
 
-header p {
-  font-size: 1.3em;
+#skills .level.intermediate .bar::after {
+	background: #ffdf1f;
+	width: 5em;
 }
 
-.subtitle {
-  font-size: 0.7em;
+#skills .level.advanced .bar::after {
+	background: #59C596;
+	width: 7.5em;
 }
 
-.header-pic {
-  float:left;
+#skills .level.master .bar::after {
+	background: #5CB85C;
+	width: 10em;
 }
 
-.profiles {
-  display:none;
+#references .item {
+	padding-left: 1em;
+	border-left: 5px solid #EB5F51;
 }
 
-.content {
-  page-break-inside:avoid; 
-  page-break-after:auto;
+.fa.social {
+	margin-right: 0.25em;
+	font-size: 1.1em;
 }
 
-.header-text {
-  float:left;
-  margin-top: -1.6em;
+/* Social Media Brand Colors */
+.google-plus {
+	color: #dd4b39;
 }
 
-.content-wrapper > .content:first-child {
-  padding-top: 2em;
+.tumblr {
+	color:#32506d;
 }
 
-.content:last-child {
-  padding-bottom: 0;
+.foursquare {
+	color:  #0072b1;
 }
 
-.content-cat {
-  width:33%;
-  color:black;
-  text-align: left;
+.facebook {
+	color: #3b5998;
 }
 
-.content-cat p {
-  font-size:0.6em;
-  font-weight: 600;
+.linkedin {
+	color: #007bb6;
 }
 
-header p, .content-text, .work-listing p, .content-text ul li:first-child, .work-listing .highlight, .content-text.skills-listing > ul > li > .highlight {
-  color:black;
+.pinterest {
+	color: #cb2027;
 }
 
-.content-text.skills-listing > ul > li span, .subtitle {
-  color:#212121;
+.dribbble {
+	color: #ea4c89;
 }
 
-.content-text ul:last-child {
-  margin-bottom: 0.25em;
+.instagram {
+	color: #517fa4;
 }
 
-.content-text ul li:first-child {
-  width:50%;
+.twitter {
+	color: #00aced;
 }
 
-.profiles-listing ul li:first-child {
-  width:32%;
+.soundcloud {
+	color: #ff3a00;
 }
 
-div.content-text.skills-listing > ul > li {
-  width:33%;
+.wordpress {
+	color: #21759b;
 }
 
-.work-listing p {
-  margin-bottom: 0.1em;
+.youtube {
+	color: #bb0000;
 }
 
-div.content-text.skills-listing > ul > li > p {
-  margin-top: 0.4em;
-  margin-bottom: 0.5em;
+.github {
+	color: #171515;
 }
 
-div.content-text.skills-listing > ul > li {
-  padding-left: 1.5em;
+.stack-overflow {
+	color: #828386;
+	position: relative;
 }
 
-div.content-text.skills-listing > ul > li:first-child {
-  padding-left: 2em;
+.flickr {
+	color: #ff0084;
 }
 
-.note {
-  display:none;
+.stack-overflow::after {
+	position: absolute;
+	left: 0;
+	content: '\f16c';
+	color: #f68a1f;
+	overflow: hidden;
+	height: 40%;
 }
 
-.content-text:hover {
-  border-left:1px solid #eeeeee;
+/******************
+*		HELPER CLASSES
+******************/
+.fa {
+	min-width: 1.25em;
+	margin-right: 0.25em;
+	text-align: center;
 }
 
-.content-text ul li a:hover {
-  color:#4fc3f7;
+.clear {
+	display: table;
+	clear: both;
 }
+
 
-.highlight:hover, .content-text.skills-listing > ul > li > .highlight:hover {
-  border-left:1px solid #eeeeee;
+/****************
+*		TABLET
+****************/
+@media screen and (min-width: 602px) {
+
+	#resume {
+		width: 550px;
+		margin: 0 auto;
+	}
+	section > header > h3 {
+		float:left;
+	}
+	section > header > .date {
+		float: right;
+		line-height: 1.3;
+	}
+
 }
+
+
+/****************
+*		LAPTOP
+****************/
+@media screen and (min-width: 1025px) {
+
+	#resume {
+		width: 650px;
+		padding: 3em;
+		margin: 3em auto;
+		background: #fff;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+	}
+
+	.section {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		margin-bottom: 1em;
+		margin-top: 1em;
+		border-bottom: 1px solid #eee;
+	}
+
+	.section:last-of-type {
+		border-bottom: none;
+		margin-bottom: 0;
+	}
+
+	section > header {
+		line-height: 1;
+		padding-bottom: 1em;
+	}
+
+	h2.section-title {
+		line-height: 1.1;
+		padding-top: 0;
+	}
+
+	section:not(.section) {
+		width: 34.5em;
+		padding: 0 1em 1em 0;
+		margin-top:0;
+		border: none;
+	}
+
+	section p {
+		margin: 0;
+	}
+
+	section#basics {
+		width: auto;
+		padding-top: 1em;
+		padding-left: 1em;
+		padding-bottom: 0;
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+	}
 
-.big-text {
-  padding-top: 0;
+	#profiles .item{
+		padding-bottom: 1em;
+	}
+
+	div {
+		padding: 0;
+	}
+
+	#skills .item {
+		padding-left:0;
+		margin-top: 0;
+	}
+
+	div.item {
+		margin-top: 0;
+		border-bottom: 1px solid #eee;
+	}
+
 }
-</style>
-</head>
-<body>
-  <div class="resume-wrapper">
-    <article class="paper">
-        <header>
-          <div class="header-content">
-            <div class="header-text">
-              <p>
-                陈靓悦 
-              </p>
-              <p class="subtitle">UI设计师</p>
-            </div>
-          </div>
-        </header>
-        <div class="content-wrapper">
-          <!-- CONTACT -->
-          <section class="content">
-            <div class="row">
-              <div class="content-cat">
-                Contact
-              </div>
-              <div class="content-text">
-                  <ul>
-                    <li>Email</li>
-                    <li><a href="mailto:346507434@qq.com">346507434@qq.com</a></li>
-                  </ul>
-                  <ul>
-                    <li>Phone</li>
-                    <li>13701614330</li>
-                  </ul>
-              </div>
-            </div>
-          </section>
+
+	</style>
+
+
+	<body>
+		<div id="resume">
+				<header id="header">
+						<div>
+							<h1 class="name">陈靓悦 </h1>
+							<h2 class="label">UI设计师</h2>
+						</div>
+
+				</header>
+
+				<section id="basics">
+
+						<div id="location">
+							<span class="region">
+								上海
+							</span>
+						</div>
+
+					<div id="contact">
+						<div class="email">
+							<span class="fa fa-envelope"></span>
+							<a href="mailto:346507434@qq.com">346507434@qq.com</a>
+						</div>
+						<div class="phone">
+							<span class="fa fa-phone-square"></span>
+							13701614330
+						</div>
+					</div>
+
+
+				</section>
 
+				</section>
 
-          <section class="content">
-            <div class="row">
-              <div class="content-cat">
-                Professional Skills Summary
-              </div>
-              <div class="content-text skills-listing">
-                  <p>
-                    <span class="name">
-                        <strong>
-                          设计工具:
-                        </strong>
-                    </span>
-                      Photoshop, Illustrator, Sketch, 蓝湖, Figma
-                  </p>
-              </div>
-            </div>
-          </section>
+				</section>
 
+				<section class="section">
+					<h2 class='section-title'>Experience</h2>
+					<section id="work">
+						<header>
+							<h3 class="name">
+								京创智汇(上海)物流科技有限公司（华师大数据智能联合实验室）
+							</h3>
+							<div class="date">
+								<span class="startDate">
+									August 2019
+								</span>
+								<span class="endDate">
+									- Present
+								</span>
+							</div>
+						</header>
+						<div class="item">
+						<div class="position">
+							高级UI设计师
+						</div>
+						<div class="website">
+							<a href="http://pay.gw.com.cn">http://pay.gw.com.cn</a>
+						</div>
+						<div class="summary">
+							<p>公司唯一的设计</p>
+						</div>
+						<ul class="highlights">
+							<li>根据APP、WEB产品原型的功能需要，重新整合展示内容排列方式。给开发设定色值、字号大小等级，像素范围等。</li>
+							<li>制作宣传、招聘等涉及的线下纸质物料。如易拉宝、二折页、手提袋等。</li>
+							<li>官网、公众号小程序页面等。</li>
+						</ul>
+					</div>
+						<header>
+							<h3 class="name">
+								财录科技有限公司
+							</h3>
+							<div class="date">
+								<span class="startDate">
+									November 2015
+								</span>
+								<span class="endDate">
+									- July 2018
+								</span>
+							</div>
+						</header>
+						<div class="item">
+						<div class="position">
+							产品经理/UI设计
+						</div>
+						<div class="website">
+							<a href="https://www.caifujilu.com/cailu">https://www.caifujilu.com/cailu</a>
+						</div>
+						<div class="summary">
+							<p>完成开发前所有流程</p>
+						</div>
+						<ul class="highlights">
+							<li>负责产品定位、交互设计；协同开发完成所有产品相关任务。</li>
+							<li>代表公司路演荣获 2017年Fintech度中国金融科技创新创业大赛入围奖。</li>
+						</ul>
+					</div>
+						<header>
+							<h3 class="name">
+								上海大智慧股份有限公司
+							</h3>
+							<div class="date">
+								<span class="startDate">
+									July 2011
+								</span>
+								<span class="endDate">
+									- November 2015
+								</span>
+							</div>
+						</header>
+						<div class="item">
+						<div class="position">
+							设计师
+						</div>
+						<div class="website">
+							<a href="http://pay.gw.com.cn">http://pay.gw.com.cn</a>
+						</div>
+						<div class="summary">
+							<p>公司对外公共关系媒介宣传</p>
+						</div>
+						<ul class="highlights">
+							<li>对公司常规项目进行包装和优化，包括平台介绍、合作案例、合作方案等。</li>
+							<li>负责相关页面的设计，包括PC端网页、微信、banner图片广告等；线上宣传内部提案和沟通。</li>
+							<li>业务相关的其他项目（如：理财博览会、产品发布会）</li>
+						</ul>
+					</div>
+					</section>
+				</section>
+
+				<section class="section">
+					<h2 class='section-title'>Education</h2>
+					<section id="education">
+							<header>
+									<h3 class="institution">
+										华东理工大学
+									</h3>
+								<div class="date">
+									<span class="startDate">
+										2006
+									</span>
+									<span class="endDate">
+										- 2010
+									</span>
+								</div>
+							</header>
+							<div class="item">
+									<div class="studyType">
+										本科-工科学士 Bachelor
+									</div>
+									<div class="area">
+										艺术设计与传媒--产品设计
+									</div>
+									<ul class="courses">
+										<li>数字时代营销 Marketing in a Dingital World</li>
+										<li>转型经济和新兴市场 Economics of Transition and Emerging Markets</li>
+										<li>艺术与文化策略 Arts and Culture Strategy</li>
+										<li>广告与社会 Advertising and Society</li>
+									</ul>
+							</div>
+					</section>
+				</section>
+
+
+				<section class="section">
+					<h2 class='section-title'>Volunteer</h2>
+					<section id="volunteer">
+								<header>
+									<h3 class="company">
+										上海博物馆
+									</h3>
+									<div class="date">
+										<span class="endDate">
+											- Present
+										</span>
+								</header>
+							<div class="item">
+							<div class="position">
+								义务导览讲解
+							</div>
+							<div class="website">
+								<a href="http://www.shanghaimuseum.net/museum/frontend/">http://www.shanghaimuseum.net/museum/frontend/</a>
+							</div>
+							<div class="summary">
+								<p>陶瓷馆</p>
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<section class="section">
+					<h2 class='section-title'>Awards</h2>
+					<section id="awards">
+						<div class="date">
+							1 November 2015
+						</div>
+						<div class="item">
+							<div class="title">
+								“中国创翼”青年创业大赛
+							</div>
+							<div class="awarder">
+								医行者 -中医线上交流平台 （现 大家中医APP）
+							</div>
+							<div class="summary">
+								<p>三等奖</p>
+							</div>
+						</div>
+					</section>
+				</section>
+
+
+				<section class="section">
+					<h2 class='section-title'>Skills</h2>
+					<section id="skills">
+						<div class="item">
+							<div class="name">
+								设计工具
+							</div>
+							<ul class="keywords">
+								<li>Photoshop</li>
+								<li>Illustrator</li>
+								<li>Sketch</li>
+								<li>蓝湖</li>
+								<li>Figma</li>
+							</ul>
+						</div>
+					</section>
+				</section>
+
+				<section class="section">
+					<h2 class='section-title'>Languages</h2>
+					<section id="languages">
+						<div class="item">
+							<div class="language">
+								中文
+							</div>
+							<div class="fluency">
+								<em>Native speaker</em>
+							</div>
+						</div>
+						<div class="item">
+							<div class="language">
+								English
+							</div>
+							<div class="fluency">
+								<em>CET6 </em>
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<section class="section">
+					<h2 class='section-title' class='section-title'>Interests</h2>
+					<section id="interests">
+						<div class="item">
+							<div class="name">
+								中国哲学史
+							</div>
+						</div>
+					</section>
+				</section>
+
+		</div>
+	</body>
 
-        
-                <section class="content">
-                  <div class="row">
-                    <div class="content-cat big-text">
-                        Work  Experience
-                          <p>2019-08-04 to Present</p>
-                    </div>
-                    <div class="content-text work-listing education-listing">
-                          <p>
-                          <strong>高级UI设计师</strong>
-                          at <strong><a href="http://pay.gw.com.cn">京创智汇(上海)物流科技有限公司（华师大金融大数据实验室）</a></strong>
-                        </p>
-                        <p>公司唯一的设计</p>
-                          <p class="highlight">根据APP、WEB产品原型的功能需要，重新整合展示内容排列方式，设定色值、字号大小等级等。</p>
-                          <p class="highlight">制作宣传、招聘等涉及的线下纸质物料。如易拉宝、二折页、手提袋等。</p>
-                          <p class="highlight">官网、公众号小程序页面等。</p>
-                    </div>
-                  </div>
-                </section>
-                <section class="content work-content">
-                  <div class="row">
-                    <div class="content-cat big-text">
-                          <p>2015-11-01 to 2018-07-01</p>
-                    </div>
-                    <div class="content-text work-listing education-listing">
-                          <p>
-                          <strong>产品经理/UI设计</strong>
-                          at <strong><a href="https://www.caifujilu.com/cailu">财录科技有限公司</a></strong>
-                        </p>
-                        <p>负责产品定位、交互设计；协同开发完成所有产品相关任务。</p>
-                          <p class="highlight">代表公司路演荣获 2017年Fintech度中国金融科技创新创业大赛入围奖</p>
-                    </div>
-                  </div>
-                </section>
-                <section class="content work-content">
-                  <div class="row">
-                    <div class="content-cat big-text">
-                          <p>2011-07-01 to 2015-11-01</p>
-                    </div>
-                    <div class="content-text work-listing education-listing">
-                          <p>
-                          <strong>设计师</strong>
-                          at <strong><a href="http://pay.gw.com.cn">上海大智慧股份有限公司</a></strong>
-                        </p>
-                        <p>公司对外公共关系媒介宣传</p>
-                          <p class="highlight">对公司常规项目进行包装和优化，包括平台介绍、合作案例、合作方案等。</p>
-                          <p class="highlight">负责相关页面的设计，包括PC端网页、微信、banner图片广告等；线上宣传内部提案和沟通。</p>
-                          <p class="highlight">业务相关的其他项目（如：理财博览会、产品发布会）</p>
-                    </div>
-                  </div>
-                </section>
-
-                <section class="content">
-                  <div class="row">
-                    <div class="content-cat big-text">
-                        Education
-                          <p>2006-09-01 to 2010-07-01</p>
-                    </div>
-                    <div class="content-text work-listing education-listing">
-                          <p style="margin-top:0;" class="heading">华东理工大学</p>
-                        <p class="highlight">
-                          本科-工科学士 Bachelor:
-                          <i>艺术设计与传媒--产品设计 </i>
-                        </p>
-                    </div>
-                  </div>
-                </section>
-
-              <section class="content">
-                <div class="row">
-                  <div class="content-cat big-text">
-                      Volunteering
-                  </div>
-                  <div class="content-text work-listing">
-                        <p>
-                        <strong>上海博物馆</strong>
-                      </p>
-                      <p>
-                        陶瓷馆
-                      </p>
-                  </div>
-                </div>
-              </section>
-
-            <section class="content">
-              <div class="row">
-                <div class="content-cat">
-                  Languages
-                </div>
-                <div class="content-text">
-                    <ul>
-                        <li>中文</li>
-                        <li>Native speaker</li>
-                    </ul>
-                    <ul>
-                        <li>English</li>
-                        <li>CET6 </li>
-                    </ul>
-                </div>
-              </div>
-            </section>
-
-
-              <section class="content">
-                <div class="row">
-                  <div class="content-cat big-text">
-                      Awards
-                      <p>“中国创翼”青年创业大赛</p>
-                      <p>2015-11-01</p>
-                  </div>
-                  <div class="content-text work-listing">
-                      <strong><p class="heading">医行者 -中医线上交流平台 （现 大家中医APP）</p></strong>
-                      <p class="highlight">三等奖</p>
-                  </div>
-                </div>
-              </section>
-
-
-            <!-- PROFILES -->
-
-            <section class="content">
-              <div class="row">
-                <div class="content-cat">
-                  Personal
-                </div>
-                <div class="content-text skills-listing">
-                    <p>
-                      <span class="name">
-                      </span>
-                    </p>
-                </div>
-              </div>
-            </section>
-
-        </div>
-    </article>
-  </div>
-</body>
 </html>

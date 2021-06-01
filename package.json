@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/Brightnessmeow/brightnessmeow.github.io#readme",
   "dependencies": {
-    "jsonresume-theme-paper": "^0.5.0"
+    "jsonresume-theme-kendall": "^0.2.0",
+    "jsonresume-theme-paper": "^0.5.0",
+    "jsonresume-theme-spartan": "^0.3.0"
   }
 }

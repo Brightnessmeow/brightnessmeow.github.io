@@ -6,7 +6,7 @@
     "email": "346507434@qq.com",
     "phone": "13701614330",
     "website": "",
-    "summary": "一个用客观理性的方式看待和思考世界，又积极入世的人。",
+    "summary": "",
     "location": {
       "address": "",
       "postalCode": "",
@@ -19,14 +19,14 @@
   "work": [
 
      {
-      "company": "京创智汇(上海)物流科技有限公司（华师大金融大数据实验室）",
+      "company": "京创智汇(上海)物流科技有限公司（华师大数据智能联合实验室）",
       "position": "高级UI设计师",
       "website": "http://pay.gw.com.cn",
       "startDate": "2019-08-04",
       "endDate": "",
       "summary": "公司唯一的设计",
       "highlights": [
-        "根据APP、WEB产品原型的功能需要，重新整合展示内容排列方式，设定色值、字号大小等级等。",
+        "根据APP、WEB产品原型的功能需要，重新整合展示内容排列方式。给开发设定色值、字号大小等级，像素范围等。",
         "制作宣传、招聘等涉及的线下纸质物料。如易拉宝、二折页、手提袋等。",
         "官网、公众号小程序页面等。"
       ]
@@ -37,9 +37,10 @@
       "website": "https://www.caifujilu.com/cailu",
       "startDate": "2015-11-01",
       "endDate": "2018-07-01",
-      "summary": "负责产品定位、交互设计；协同开发完成所有产品相关任务。",
+      "summary": "完成开发前所有流程",
       "highlights": [
-        "代表公司路演荣获 2017年Fintech度中国金融科技创新创业大赛入围奖"
+        "负责产品定位、交互设计；协同开发完成所有产品相关任务。",
+        "代表公司路演荣获 2017年Fintech度中国金融科技创新创业大赛入围奖。"
       ]
     },
     {
@@ -61,6 +62,7 @@
       "organization": "上海博物馆",
       "position": "义务导览讲解",
       "website": "http://www.shanghaimuseum.net/museum/frontend/",
+   
       "summary": "陶瓷馆",
       "highlights": []
     }
@@ -115,15 +117,8 @@
   ],
   "interests": [
     {
-      "name": "中国哲学",
-      "keywords": [
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Henry Ford",
-      "reference": "When everything seems to be going against you,remember that the airplane takes off against the wind, not with it."
+      "name": "中国哲学史"
     }
   ]
 }
+ 
